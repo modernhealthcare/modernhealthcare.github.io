@@ -1,0 +1,11 @@
+a {
+  color: @crimson;
+  //font-weight: 500;
+  text-decoration: none;
+  .transition( 0.2s; color; ease-in-out );
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken(@crimson, 10%);
+  }
+}
