@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-You'll find some essential files in the root of `CHWeb` (also in this repo) to get up and running with these tools:
+You'll find some essential files in the root of `CHWeb` to get up and running with these tools:
 
 - `package.json` installs dependencies for gulp.js
 - `gulpfile.js` configs the build system with tasks for compiling/minifying LESS and linting/compressing JS
