@@ -29,6 +29,10 @@
 
 - A Collection of [Dialog Effects](http://tympanus.net/Development/DialogEffects/) *Codrops*
 
+### PDF
+
+- [jsPDF](https://parall.ax/products/jspdf) *HTML5 client-side solution for generating PDFs.*
+
 ### Photo Gallery
 
 - [Featherlight.js](http://noelboss.github.io/featherlight/) *The ultra slim lightbox.*
