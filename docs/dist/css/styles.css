@@ -167,6 +167,8 @@ dfn {
  * Known issue: no IE 6/7 normalization.
  */
 hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -401,6 +403,8 @@ html input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -418,6 +422,8 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -480,6 +486,8 @@ table {
   display: block;
 }
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
@@ -713,6 +721,7 @@ this the same font stack that Normalize.css sets for the `body`.
 }
 .pure-u-11-24 {
   width: 45.8333%;
+  width: -webkit-calc(45.83333333%);
   width: calc(45.83333333%);
   *width: 45.8023%;
 }
@@ -1741,9 +1750,11 @@ blockquote {
   font-family: Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
   font-size: 1.35em;
   line-height: 1;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   border: 1px solid #e6e6e6;
   border-left: 12px solid #df6d27;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
   padding: 0;
   margin: 0;
@@ -1773,8 +1784,10 @@ th code {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  -webkit-border-radius: .5em;
   border-radius: .5em;
   border: 0.1px solid #000000;
+  -webkit-box-shadow: 1px 1px .5em black inset;
   box-shadow: 1px 1px .5em black inset;
   margin: .5em 0;
   overflow: auto;
@@ -1834,6 +1847,7 @@ a:active {
   /*IE9 + everything else*/
   background-color: #e6e6e6;
   text-decoration: none;
+  -webkit-border-radius: 1em;
   border-radius: 1em;
   vertical-align: middle;
 }
@@ -1844,6 +1858,7 @@ a:active {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
   background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
 }
 .pure-button:focus {
@@ -1851,6 +1866,7 @@ a:active {
 }
 .pure-button-active,
 .pure-button:active {
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 }
 .pure-button[disabled],
@@ -1866,6 +1882,7 @@ a:active {
   -moz-opacity: 0.40;
   opacity: 0.40;
   cursor: not-allowed;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .pure-button-hidden {
@@ -1927,8 +1944,12 @@ a.pure-button-sponsored span {
   padding: 0.35em;
   display: inline-block;
   border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 3px #dddddd;
   box-shadow: inset 0 1px 3px #dddddd;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 /*
@@ -1939,8 +1960,12 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   padding: 0.35em;
   display: inline-block;
   border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 3px #dddddd;
   box-shadow: inset 0 1px 3px #dddddd;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* Chrome (as of v.32/34 on OS X) needs additional room for color to display. */
@@ -2125,6 +2150,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 /* Rounded Inputs */
 .pure-form input.pure-input-rounded,
 .pure-form .pure-input-rounded {
+  -webkit-border-radius: 2em;
   border-radius: 2em;
   padding: 0.5em 1em;
 }
@@ -2136,6 +2162,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   display: block;
   padding: 10px;
   margin: 0;
+  -webkit-border-radius: 0;
   border-radius: 0;
   position: relative;
   top: -1px;
@@ -2145,10 +2172,12 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 }
 .pure-form .pure-group input:first-child {
   top: 1px;
+  -webkit-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
 .pure-form .pure-group input:last-child {
   top: -2px;
+  -webkit-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
 .pure-form .pure-group button {
@@ -2249,6 +2278,7 @@ hr {
   height: 2px;
   background: #e6e6e6;
   border: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   margin: 1em 0;
 }
@@ -2476,6 +2506,7 @@ hr.blue {
   margin: 0 .25em;
 }
 .pure-paginator .pure-button {
+  -webkit-border-radius: 0;
   border-radius: 0;
   padding: 0.8em 1.4em;
   vertical-align: top;
@@ -2493,9 +2524,11 @@ hr.blue {
 }
 */
 .pure-paginator .prev {
+  -webkit-border-radius: 2px 0 0 2px;
   border-radius: 2px 0 0 2px;
 }
 .pure-paginator .next {
+  -webkit-border-radius: 0 2px 2px 0;
   border-radius: 0 2px 2px 0;
 }
 @media (max-width: 480px) {
@@ -2514,6 +2547,7 @@ table,
   border-spacing: 0;
   empty-cells: show;
   border: 1px solid #cbcbcb;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 table caption,
@@ -2650,6 +2684,7 @@ table.responsive {
   background: #424b55;
   overflow: hidden;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.35);
   box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.35);
 }
 @media screen and ( min-width: 48em ) {
@@ -2751,6 +2786,7 @@ table.responsive {
   display: inline-block;
   width: 100%;
   background-color: #2c3238;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35);
   border-top: 1px solid #15181c;
   border-bottom: 1px solid #2c3238;
@@ -2843,8 +2879,10 @@ pre[class*="language-"],
 }
 /* Code blocks */
 pre[class*="language-"] {
+  -webkit-border-radius: .5em;
   border-radius: .5em;
   border: 0.1px solid #000000;
+  -webkit-box-shadow: 1px 1px .5em black inset;
   box-shadow: 1px 1px .5em black inset;
   margin: .5em 0;
   overflow: auto;
@@ -2885,10 +2923,12 @@ code[class*="language-"] ::selection {
 }
 /* Inline code */
 :not(pre) > code[class*="language-"] {
+  -webkit-border-radius: .3em;
   border-radius: .3em;
   border: 0.13em solid #545454;
   /* #545454 */
-  box-shadow: 1px 1px 0.3em -0.1em black inset;
+  -webkit-box-shadow: 1px 1px 0.3em -0.1em #000000 inset;
+  box-shadow: 1px 1px 0.3em -0.1em #000000 inset;
   padding: .15em .2em .05em;
 }
 .token.comment,
@@ -2965,6 +3005,7 @@ pre[data-line] {
   /* #545454 */
   background: rgba(84, 84, 84, 0.25);
   /* #545454 */
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, rgba(84, 84, 84, 0.1)), to(rgba(84, 84, 84, 0)));
   background: linear-gradient(left, rgba(84, 84, 84, 0.1) 70%, rgba(84, 84, 84, 0));
   /* #545454 */
   border-bottom: 1px dashed #545454;
@@ -2986,7 +3027,9 @@ pre[data-line] {
 .line-highlight[data-end]:after {
   background-color: #8794a6;
   /* #8794A6 */
+  -webkit-border-radius: 999px;
   border-radius: 999px;
+  -webkit-box-shadow: 0 1px white;
   box-shadow: 0 1px white;
   color: #f5f2f0;
   /* #F5F2F0 */
@@ -3019,6 +3062,7 @@ pre[data-line] {
   /* Same as .prism’s padding-top */
   background: rgba(153, 122, 102, 0.08);
   background: -webkit-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, rgba(153, 122, 102, 0.1)), to(rgba(153, 122, 102, 0)));
   background: linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
   pointer-events: none;
   line-height: inherit;
@@ -3037,8 +3081,10 @@ pre[data-line] {
   font: bold 65%/1.5 sans-serif;
   text-align: center;
   vertical-align: .3em;
+  -webkit-border-radius: 999px;
   border-radius: 999px;
   text-shadow: none;
+  -webkit-box-shadow: 0 1px white;
   box-shadow: 0 1px white;
 }
 .line-highlight[data-end]:after {
@@ -3178,6 +3224,7 @@ pre.line-numbers > code {
     border: 0 !important;
     vertical-align: baseline !important;
     text-shadow: none !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
   }
   /* HTML5 display-role reset for older browsers */
