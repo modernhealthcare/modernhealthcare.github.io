@@ -21,7 +21,7 @@ a {
   visibility: hidden;
   opacity: 0;
   background: @crimson;
-  box-shadow: 0 0 10px rgba(0,0,0, .15);
+  box-shadow: 0 0 10px rgba(0,0,0, .45);
   border-radius: 4px;
   padding: .5em;
   z-index: 999;
@@ -39,4 +39,8 @@ a {
 
 .to-top.fade-out {
   opacity: .65;
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
 }

@@ -1841,8 +1841,8 @@ a:active {
   visibility: hidden;
   opacity: 0;
   background: #982329;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
   -webkit-border-radius: 4px;
   border-radius: 4px;
   padding: .5em;
@@ -1860,6 +1860,10 @@ a:active {
 }
 .to-top.fade-out {
   opacity: .65;
+}
+.to-top.fade-out:focus,
+.to-top.fade-out:hover {
+  opacity: 1;
 }
 .pure-button {
   /* Structure */
