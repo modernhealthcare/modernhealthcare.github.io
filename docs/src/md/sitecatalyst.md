@@ -352,7 +352,7 @@
 
 <pre>
 <code class="language-javascript">
-<script>
+&lt;script>
   var showHide = &#36;('.show-hide'),
       showHideChild = &#36;('.sub-nav-child .show-hide-child'),
       subNavChild = &#36;('.sub-nav-child'),
@@ -364,7 +364,7 @@
 
   subNavLink.addClass('omnitrack').attr('data-omnilocation', 'subnav').attr('data-omnilink', 'subnav-' + subNavTitle);
 
-  if( &#36;(window).width() < 768 ) {
+  if( &#36;(window).width() &lt; 768 ) {
     subNavChild.hide();
     subMenu.hide();
     showHideChild.attr('data-omnilink', 'subnav-child-open');

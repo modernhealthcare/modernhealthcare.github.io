@@ -353,7 +353,7 @@ gulp.task('default', ['styles', 'scripts', 'watch']);
 </code>
 </pre><h3 id="sub-nav">Sub Nav</h3><pre>
 <code class="language-javascript">
-<script>
+&lt;script>
   var showHide = &#36;('.show-hide'),
       showHideChild = &#36;('.sub-nav-child .show-hide-child'),
       subNavChild = &#36;('.sub-nav-child'),
@@ -365,7 +365,7 @@ gulp.task('default', ['styles', 'scripts', 'watch']);
 
   subNavLink.addClass('omnitrack').attr('data-omnilocation', 'subnav').attr('data-omnilink', 'subnav-' + subNavTitle);
 
-  if( &#36;(window).width() < 768 ) {
+  if( &#36;(window).width() &lt; 768 ) {
     subNavChild.hide();
     subMenu.hide();
     showHideChild.attr('data-omnilink', 'subnav-child-open');
@@ -415,7 +415,7 @@ gulp.task('default', ['styles', 'scripts', 'watch']);
 
   parentSubNav();
   childSubNav();
-</script>
+
 </code>
 </pre><h3 id="subscriptions">Subscriptions</h3><pre>
 <code class="language-markup">
