@@ -257,14 +257,14 @@
 
 &lt;script>
     // touch nav
-    var menuBttn = $('.menu-bttn'),
-        menuItems = $('.menu-items');
+    var menuBttn = &#36;('.menu-bttn'),
+        menuItems = &#36;('.menu-items');
     
     menuItems.hide();
     menuBttn.bind('tap', function(e) {
       menuItems.slideToggle(200);
       menuItems.toggleClass('open');
-      $('.content').toggleClass('open');
+      &#36;('.content').toggleClass('open');
       if (menuItems.hasClass('open')) {
         menuBttn.attr('data-omnilink', 'toggle-close');
       } else {
@@ -319,13 +319,13 @@
 
 &lt;script>
   // search toggle
-  $('.fixed-bttns .search a').bind('tap', function(e) {
-    $('.search-toggle').slideToggle(120);
-    $(this).toggleClass('open');
-    if($(this).hasClass('open')) {
-      $(this).attr('data-omnilink', 'search-close');
+  &#36;('.fixed-bttns .search a').bind('tap', function(e) {
+    &#36;('.search-toggle').slideToggle(120);
+    &#36;(this).toggleClass('open');
+    if(&#36;(this).hasClass('open')) {
+      &#36;(this).attr('data-omnilink', 'search-close');
     } else {
-      $(this).attr('data-omnilink', 'search-open');
+      &#36;(this).attr('data-omnilink', 'search-open');
     }
     e.preventDefault();
   });
@@ -353,18 +353,18 @@
 <pre>
 <code class="language-javascript">
 <script>
-  var showHide = $('.show-hide'),
-      showHideChild = $('.sub-nav-child .show-hide-child'),
-      subNavChild = $('.sub-nav-child'),
-      subNav = $('.sub-nav'),
-      subMenu = $('.sub-nav-child .sub-menu'),
-      subNavLink = $('.sub-nav h1 a').not('.show-hide'),
+  var showHide = &#36;('.show-hide'),
+      showHideChild = &#36;('.sub-nav-child .show-hide-child'),
+      subNavChild = &#36;('.sub-nav-child'),
+      subNav = &#36;('.sub-nav'),
+      subMenu = &#36;('.sub-nav-child .sub-menu'),
+      subNavLink = &#36;('.sub-nav h1 a').not('.show-hide'),
       subNavTitle = subNavLink.text().replace(/\s+/g, '-').toLowerCase();
 
 
   subNavLink.addClass('omnitrack').attr('data-omnilocation', 'subnav').attr('data-omnilink', 'subnav-' + subNavTitle);
 
-  if( $(window).width() < 768 ) {
+  if( &#36;(window).width() < 768 ) {
     subNavChild.hide();
     subMenu.hide();
     showHideChild.attr('data-omnilink', 'subnav-child-open');
@@ -378,14 +378,14 @@
   var parentSubNav = (function() {
     //showHide.addClass('omnitrack').attr('data-omnilocation', 'subnav');
     showHide.bind('tap', function(e) {
-      if( $(this).find('span').hasClass('icon-plus3') ) {
-        $(this).attr('data-omnilink', 'subnav-parent-close');
-        $(this).find('span').removeClass('icon-plus3');
-        $(this).find('span').addClass('icon-minus3');
+      if( &#36;(this).find('span').hasClass('icon-plus3') ) {
+        &#36;(this).attr('data-omnilink', 'subnav-parent-close');
+        &#36;(this).find('span').removeClass('icon-plus3');
+        &#36;(this).find('span').addClass('icon-minus3');
       } else {
-        $(this).attr('data-omnilink', 'subnav-parent-open');
-        $(this).find('span').removeClass('icon-minus3');
-        $(this).find('span').addClass('icon-plus3');
+        &#36;(this).attr('data-omnilink', 'subnav-parent-open');
+        &#36;(this).find('span').removeClass('icon-minus3');
+        &#36;(this).find('span').addClass('icon-plus3');
       }
       subNavChild.slideToggle(180);
       e.preventDefault();
@@ -394,18 +394,18 @@
 
   var childSubNav = (function() {
     showHideChild.each(function() {
-      //$(this).addClass('omnitrack').attr('data-omnilocation', 'subnav');
-      $(this).bind('tap', function(e) {
-        if( $(this).find('span').hasClass('icon-plus3') ) {
-          $(this).attr('data-omnilink', 'subnav-child-close');
-          $(this).find('span').removeClass('icon-plus3');
-          $(this).find('span').addClass('icon-minus3');
+      //&#36;(this).addClass('omnitrack').attr('data-omnilocation', 'subnav');
+      &#36;(this).bind('tap', function(e) {
+        if( &#36;(this).find('span').hasClass('icon-plus3') ) {
+          &#36;(this).attr('data-omnilink', 'subnav-child-close');
+          &#36;(this).find('span').removeClass('icon-plus3');
+          &#36;(this).find('span').addClass('icon-minus3');
         } else {
-          $(this).attr('data-omnilink', 'subnav-child-open');
-          $(this).find('span').removeClass('icon-minus3');
-          $(this).find('span').addClass('icon-plus3');
+          &#36;(this).attr('data-omnilink', 'subnav-child-open');
+          &#36;(this).find('span').removeClass('icon-minus3');
+          &#36;(this).find('span').addClass('icon-plus3');
         }
-        $(this).next().slideToggle(180);
+        &#36;(this).next().slideToggle(180);
         e.preventDefault();
         //e.preventDefault();
       });
@@ -426,15 +426,15 @@
 &lt;a class="pure-button pure-button-primary omnitrack" data-omnilocation="subscriptions" data-omnilink="subscription-premium-digital" id="sub-cont" href="https://sec.crain.com/MH/QuickOrder.aspx?PromotionCode=W4MHPN1">Continue &lt;span class="icon-arrow-right4">&lt;/span>&lt;/a>
 &lt;!-- script to track selected subscription option -->
 &lt;script>
-  $('input[name="subscription"]').change(function(){
-    var checkedVal = $('input[name="subscription"]:checked').val(),
-         checkedID = $('input[name="subscription"]:checked').attr('id');
+  &#36;('input[name="subscription"]').change(function(){
+    var checkedVal = &#36;('input[name="subscription"]:checked').val(),
+         checkedID = &#36;('input[name="subscription"]:checked').attr('id');
     console.log(checkedVal);
     console.log('subscription-' + checkedID);
     if(checkedVal !== 'https://home.modernhealthcare.com/clickshare/addAccountFree.do') {
-      $('#sub-cont').attr('href', 'https://sec.crain.com/MH/QuickOrder.aspx?PromotionCode=' + checkedVal).attr('data-omnilink', 'subscription-' + checkedID);
+      &#36;('#sub-cont').attr('href', 'https://sec.crain.com/MH/QuickOrder.aspx?PromotionCode=' + checkedVal).attr('data-omnilink', 'subscription-' + checkedID);
     } else {
-      $('#sub-cont').attr('href', 'https://home.modernhealthcare.com/clickshare/addAccountFree.do').attr('data-omnilink', 'subscription-website-registration-and-newsletters');
+      &#36;('#sub-cont').attr('href', 'https://home.modernhealthcare.com/clickshare/addAccountFree.do').attr('data-omnilink', 'subscription-website-registration-and-newsletters');
     }
     
   });

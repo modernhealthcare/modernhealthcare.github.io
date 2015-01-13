@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+  $('h1,h2,h3,h4,h5,h6').each(function() {
+    var link = '<span class="icon-link"></span>';
+    if ($(this).attr('id')) {
+      $(this).prepend(link);
+    }
+  });
+
   $(function() {
     $('a[href="#"]').click(function(e) {
       $('html,body').animate({
@@ -20,6 +27,7 @@ $(document).ready(function () {
       e.preventDefault();
     });
   });
+
 
 });
 

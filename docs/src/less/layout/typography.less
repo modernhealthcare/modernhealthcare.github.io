@@ -13,6 +13,16 @@ h6 {
     color: lighten(@black, 10%);
     font-size: 83%;
   }
+  span {
+    color: lighten(@black, 85%);
+    font-size: .85em;
+    padding-right: .25em;
+    .transition( 0.2s; color; ease-in-out );
+  }
+  &:focus span,
+  &:hover span {
+    color: @masthead;
+  }
 }
 
 b,

@@ -1,5 +1,3 @@
-# Docs
-
 ## Getting Started
 
 You'll find some essential files in the root of `CHWeb` to get up and running with these tools:
@@ -18,7 +16,7 @@ In your terminal or command prompt, run the following command to install depende
 
 <pre>
 <code class="language-bash">
-$ npm install
+&#36; npm install
 </code>
 </pre>
 
@@ -26,7 +24,7 @@ If you have trouble on a Mac, run this command and enter your system password:
 
 <pre>
 <code class="language-bash">
-$ sudo npm install
+&#36; sudo npm install
 </code>
 </pre>
 
@@ -58,7 +56,7 @@ var gulp = require('gulp'),
 #### Styles
 
 This is our `'styles'` task.  First, we tell gulp where to look for the scource files.  In the root of `CHWeb`, you can find the `src/` directory.  This contains the modular LESS components for styling the site.  The reason we have stylesheets broken out into sepearte sources in so that we only pull in what is neccessary in the browser.  This task checks for LESS compiling errors, has an autoprefixer and distributes both an expanded and a minified version of the source files.  The site uses the minified versions, so make sure to upload those.
-This task can be ran on its own: `$ gulp styles`
+This task can be ran on its own: `&#36; gulp styles`
 
 <pre>
 <code class="language-javascript">
@@ -86,7 +84,7 @@ gulp.task('styles', function() {
 #### Lint & Scripts
 
 The `'lint'` task uses JShint to check for errors and proper syntax.  Errors are by default reported in your terminal or command prompt window.
-This task can be ran on its own: `$ gulp lint`
+This task can be ran on its own: `&#36; gulp lint`
 
 <pre>
 <code class="language-javascript">
@@ -99,7 +97,7 @@ gulp.task('lint', function() {
 </pre>
 
 The `'scripts'` task runs on our main scripts file, found in `src/js/scripts.js`.  First, we lint the script for errors, then we minify and distribute to our `js/` folder as a minified version -- this should be shipped to production.
-This task can be ran on its own: `$ gulp scripts`
+This task can be ran on its own: `&#36; gulp scripts`
 
 <pre>
 <code class="language-javascript">
@@ -117,7 +115,7 @@ gulp.task('scripts', ['lint'], function() {
 #### Watch
 
 The `'watch'` task will check to see if there are changes being made to our `src` files when working on them.
-This task can be ran on its own: `$ gulp watch`
+This task can be ran on its own: `&#36; gulp watch`
 
 <pre>
 <code class="language-javascript">
@@ -131,7 +129,7 @@ gulp.task('watch', function() {
 #### Default
 
 We define the `'default'` gulp task by telling it to run all of our predefined tasks `['styles', 'scripts', 'watch']`.  When running this task, gulp will compile/minify all LESS and JS, then watch those same files for changes, so that when working on `src/` files, any changed/saved file will be piped through the build system and distributed to their defined destinations.  You will also notice that the size of these files will print out in your terminal or command prompt window.  
-It is recommended that you run the `'default'` gulp task when working on source files:  `$ gulp`
+It is recommended that you run the `'default'` gulp task when working on source files:  `&#36; gulp`
 
 <pre>
 <code class="language-javascript">

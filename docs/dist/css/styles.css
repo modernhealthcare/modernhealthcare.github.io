@@ -1713,6 +1713,32 @@ h6.small {
   color: #1a1a1a;
   font-size: 83%;
 }
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+  color: #d9d9d9;
+  font-size: .85em;
+  padding-right: .25em;
+  -webkit-transition: 0.2s color ease-in-out;
+  transition: 0.2s color ease-in-out;
+}
+h1:focus span,
+h2:focus span,
+h3:focus span,
+h4:focus span,
+h5:focus span,
+h6:focus span,
+h1:hover span,
+h2:hover span,
+h3:hover span,
+h4:hover span,
+h5:hover span,
+h6:hover span {
+  color: #424b55;
+}
 b,
 strong {
   font-weight: 700;

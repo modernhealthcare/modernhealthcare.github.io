@@ -1,4 +1,3 @@
-<h1 id="docs">Docs</h1>
 <h2 id="getting-started">Getting Started</h2>
 <p>You&#39;ll find some essential files in the root of <code>CHWeb</code> to get up and running with these tools:</p>
 <ul>
@@ -12,14 +11,14 @@
 <p>In your terminal or command prompt, run the following command to install dependencies from <code>package.json</code>:</p>
 <pre>
 <code class="language-bash">
-$ npm install
+&#36; npm install
 </code>
 </pre>
 
 <p>If you have trouble on a Mac, run this command and enter your system password:</p>
 <pre>
 <code class="language-bash">
-$ sudo npm install
+&#36; sudo npm install
 </code>
 </pre>
 
@@ -45,7 +44,7 @@ var gulp = require('gulp'),
 
 <h4 id="styles">Styles</h4>
 <p>This is our <code>&#39;styles&#39;</code> task.  First, we tell gulp where to look for the scource files.  In the root of <code>CHWeb</code>, you can find the <code>src/</code> directory.  This contains the modular LESS components for styling the site.  The reason we have stylesheets broken out into sepearte sources in so that we only pull in what is neccessary in the browser.  This task checks for LESS compiling errors, has an autoprefixer and distributes both an expanded and a minified version of the source files.  The site uses the minified versions, so make sure to upload those.
-This task can be ran on its own: <code>$ gulp styles</code></p>
+This task can be ran on its own: <code>&amp;#36; gulp styles</code></p>
 <pre>
 <code class="language-javascript">
 gulp.task('styles', function() {
@@ -71,7 +70,7 @@ gulp.task('styles', function() {
 
 <h4 id="lint-scripts">Lint &amp; Scripts</h4>
 <p>The <code>&#39;lint&#39;</code> task uses JShint to check for errors and proper syntax.  Errors are by default reported in your terminal or command prompt window.
-This task can be ran on its own: <code>$ gulp lint</code></p>
+This task can be ran on its own: <code>&amp;#36; gulp lint</code></p>
 <pre>
 <code class="language-javascript">
 gulp.task('lint', function() {
@@ -83,7 +82,7 @@ gulp.task('lint', function() {
 </pre>
 
 <p>The <code>&#39;scripts&#39;</code> task runs on our main scripts file, found in <code>src/js/scripts.js</code>.  First, we lint the script for errors, then we minify and distribute to our <code>js/</code> folder as a minified version -- this should be shipped to production.
-This task can be ran on its own: <code>$ gulp scripts</code></p>
+This task can be ran on its own: <code>&amp;#36; gulp scripts</code></p>
 <pre>
 <code class="language-javascript">
 gulp.task('scripts', ['lint'], function() {
@@ -99,7 +98,7 @@ gulp.task('scripts', ['lint'], function() {
 
 <h4 id="watch">Watch</h4>
 <p>The <code>&#39;watch&#39;</code> task will check to see if there are changes being made to our <code>src</code> files when working on them.
-This task can be ran on its own: <code>$ gulp watch</code></p>
+This task can be ran on its own: <code>&amp;#36; gulp watch</code></p>
 <pre>
 <code class="language-javascript">
 gulp.task('watch', function() {
@@ -110,7 +109,7 @@ gulp.task('watch', function() {
 </pre>
 
 <h4 id="default">Default</h4>
-<p>We define the <code>&#39;default&#39;</code> gulp task by telling it to run all of our predefined tasks <code>[&#39;styles&#39;, &#39;scripts&#39;, &#39;watch&#39;]</code>.  When running this task, gulp will compile/minify all LESS and JS, then watch those same files for changes, so that when working on <code>src/</code> files, any changed/saved file will be piped through the build system and distributed to their defined destinations.  You will also notice that the size of these files will print out in your terminal or command prompt window.<br>It is recommended that you run the <code>&#39;default&#39;</code> gulp task when working on source files:  <code>$ gulp</code></p>
+<p>We define the <code>&#39;default&#39;</code> gulp task by telling it to run all of our predefined tasks <code>[&#39;styles&#39;, &#39;scripts&#39;, &#39;watch&#39;]</code>.  When running this task, gulp will compile/minify all LESS and JS, then watch those same files for changes, so that when working on <code>src/</code> files, any changed/saved file will be piped through the build system and distributed to their defined destinations.  You will also notice that the size of these files will print out in your terminal or command prompt window.<br>It is recommended that you run the <code>&#39;default&#39;</code> gulp task when working on source files:  <code>&amp;#36; gulp</code></p>
 <pre>
 <code class="language-javascript">
 gulp.task('default', ['styles', 'scripts', 'watch']);
