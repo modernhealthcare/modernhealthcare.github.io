@@ -4,7 +4,7 @@
 
 ### Comments
 
-- [SideComments.js](http://aroc.github.io/side-comments-demo/) *Medium.com style commenting*
+- [SideComments.js](http://aroc.github.io/side-comments-demo/) Medium.com style commenting
 
 ### Data Visualization
 
@@ -14,8 +14,8 @@
 ### HTML Emails
 
 - [A Bulletproof Guide to Using HTML5 and CSS3 in Email](https://litmus.com/blog/a-bulletproof-guide-to-using-html5-and-css3-in-email)
-- [A Guide to Rendering Differences in Microsoft Outlook Clients](https://litmus.com/blog/a-guide-to-rendering-differences-in-microsoft-outlook-clients) *Litmus*
-- [Email Design Reference](http://templates.mailchimp.com/) *by MailChimp*
+- [A Guide to Rendering Differences in Microsoft Outlook Clients](https://litmus.com/blog/a-guide-to-rendering-differences-in-microsoft-outlook-clients) Litmus
+- [Email Design Reference](http://templates.mailchimp.com/) by MailChimp
 
 ### Images
 
@@ -23,21 +23,26 @@
 
 ### LESS
 
-- [SimpLESS](http://wearekiss.com/simpless) *Your LESS CSS Compiler*
+- [SimpLESS](http://wearekiss.com/simpless) Your LESS CSS Compiler
 
 ### Modal / Dialog
 
-- A Collection of [Dialog Effects](http://tympanus.net/Development/DialogEffects/) *Codrops*
+- A Collection of [Dialog Effects](http://tympanus.net/Development/DialogEffects/) Codrops
+
+### Patter Library
+
+- A List Apart - [Getting Started With Pattern Libraries](http://alistapart.com/blog/post/getting-started-with-pattern-libraries)
+- Mail Chimp's [Pattern Library](http://ux.mailchimp.com/patterns/)
 
 ### PDF
 
-- [jsPDF](https://parall.ax/products/jspdf) *HTML5 client-side solution for generating PDFs.*
+- [jsPDF](https://parall.ax/products/jspdf) HTML5 client-side solution for generating PDFs.
 
 ### Photo Gallery
 
-- [Featherlight.js](http://noelboss.github.io/featherlight/) *The ultra slim lightbox.*
-- [PhotoSwipe](http://photoswipe.com/) *JavaScript gallery, no dependencies.*
+- [Featherlight.js](http://noelboss.github.io/featherlight/) The ultra slim lightbox.
+- [PhotoSwipe](http://photoswipe.com/) JavaScript gallery, no dependencies.
 
 ### Social
 
-- [Find Guidelines](http://findguidelin.es/) *The fastest way to brand assets.*
+- [Find Guidelines](http://findguidelin.es/) The fastest way to brand assets.
