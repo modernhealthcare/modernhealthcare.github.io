@@ -3,13 +3,20 @@
 > A comprehensive, curated list of mobile-first resources for Modern Healthcare's digital prodcts.
 
 ### Comments
-
 - [SideComments.js](http://aroc.github.io/side-comments-demo/) Medium.com style commenting
+
+### CSS
+- [MindBEMding – getting your head ’round BEM syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+- [Strategies for Keeping CSS Specificity Low](http://css-tricks.com/strategies-keeping-css-specificity-low/)
+- [The Magic of CSS](http://adamschwartz.co/magic-of-css/) - by @adamfschwartz
 
 ### Data Visualization
 
 - [CHARTIST.JS](http://gionkunz.github.io/chartist-js/)
 - [Timesheet.js](http://semu.github.io/timesheet.js/)
+
+### Filter Gallery
+- [Content Filter](http://codyhouse.co/demo/content-filter/index.html#0) - Codyhouse
 
 ### HTML Emails
 
@@ -20,6 +27,10 @@
 ### Images
 
 - [https://github.com/jonom/jquery-focuspoint](https://github.com/jonom/jquery-focuspoint)
+
+### JS
+
+- [LimeLight](https://limelight.link/)
 
 ### LESS
 
