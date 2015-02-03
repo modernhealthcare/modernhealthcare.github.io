@@ -55,7 +55,7 @@ gulp.task('scripts', ['lint'], function() {
 gulp.task('html', function() {
   gulp.src([
     './src/index.html',
-    './src/inc/**/*.html'
+    './src/inc/*.html'
   ])
   .pipe(plumber())
   .pipe(include({
@@ -104,7 +104,7 @@ gulp.task('build', ['styles', 'scripts', 'html', 'images', 'fonts']);
 gulp.task('default', ['build', 'browser-sync'], function() {
   gulp.watch('./src/less/**/*.less', ['styles', 'reload']);
   gulp.watch('./src/js/scripts.js', ['scripts', 'reload']);
-  gulp.watch(['./src/md/**/*.md', './src/index.html'], ['html', 'reload']);
+  gulp.watch('./src/**/*html', ['html', 'reload']);
   gulp.watch('./src/img/*', ['images', 'reload']);
   gulp.watch('./src/fonts/*', ['fonts', 'reload']);
 });
