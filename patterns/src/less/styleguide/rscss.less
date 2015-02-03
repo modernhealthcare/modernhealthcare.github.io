@@ -109,3 +109,29 @@ h6[id] {
   padding: 0 0 .5em;
   margin: 0;
 }
+
+.swatches {
+  li {
+    padding: 0 4px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    @media @md {
+      float: left;
+      width: 50%;
+    }
+    .swatch {
+      text-align: center;
+      border-radius: 4px;
+      padding: 48px 0;
+      &.dark {
+        color: @white;
+      }
+      &.light {
+        color: @black;
+      }
+      strong {
+        padding-right: .5em;
+      }
+    }
+  }
+}
