@@ -1769,28 +1769,28 @@ ul li {
 ul li::before {
   content: '\2022 \020';
 }
+/*
 blockquote {
   display: block;
   width: 100%;
-  color: #595959;
-  font-family: Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+  color: darken(@white, 65%);
+  font-family: @secondary-font;
+  //font-weight: 700;
   font-size: 1.35em;
   line-height: 1;
-  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-  border: 1px solid #e6e6e6;
-  border-left: 12px solid #df6d27;
-  -webkit-border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0, .06);
+  border: 1px solid darken(@white, 10%);
+  border-left: 12px solid @spice;
   border-radius: 4px;
   padding: 0;
   margin: 0 0 2em 0;
+  p {
+    line-height: 1;
+    margin-left: 1em;
+  }
 }
-blockquote p {
-  line-height: 1;
-  margin-left: 1em;
-}
-p code,
-li code {
+*/
+p code {
   white-space: normal !important;
 }
 a {
@@ -3068,6 +3068,13 @@ h6[id] {
 .labelSM {
   font-size: 14px;
   padding-left: .35em;
+}
+.pullquote {
+  font-family: Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 0 0 .5em;
+  margin: 0;
 }
 @media print {
   .print {
