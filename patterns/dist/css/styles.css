@@ -1753,21 +1753,30 @@ p {
 }
 ul,
 ol {
-  list-style: none;
   padding: 0;
   margin-top: .85em;
   margin-bottom: 1em;
 }
 ul {
-  text-indent: -1em;
-  padding-left: 1em;
-  margin-left: 0;
+  list-style: none;
 }
 ul li {
   padding-bottom: .5em;
 }
-ul li::before {
+.dot-list {
+  text-indent: -1em;
+  padding-left: 1em;
+  margin-left: 0;
+}
+.dot-list li::before {
   content: '\2022 \020';
+}
+ol {
+  list-style: decimal;
+  padding: 0 0 0 40px;
+}
+ol li {
+  padding-bottom: 1em;
 }
 /*
 blockquote {

@@ -42,19 +42,30 @@ p {
 
 ul,
 ol {
-  list-style: none;
   padding: 0;
   margin-top: .85em;
   margin-bottom: 1em;
 }
 
 ul {
+  list-style: none;
+  li { padding-bottom: .5em; }
+}
+
+.dot-list {
   text-indent: -1em;
   padding-left: 1em;
   margin-left: 0;
-  li { padding-bottom: .5em; }
   li::before {
     content: '\2022 \020';
+  }
+}
+
+ol {
+  list-style: decimal;
+  padding: 0 0 0 40px;
+  li {
+    padding-bottom: 1em;
   }
 }
 
