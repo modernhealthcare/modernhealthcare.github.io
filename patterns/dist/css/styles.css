@@ -1989,6 +1989,21 @@ a:active {
     margin-left: 25%;
   }
 }
+.article {
+  line-height: 1.5;
+}
+.article-title {
+  display: inline-block;
+  margin-top: 0;
+}
+.article-title .-title-xl {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.-article-meta {
+  color: #424b55;
+  font-size: .675em;
+}
 .pure-button {
   /* Structure */
   display: inline-block;
