@@ -16,14 +16,14 @@ h6 {
     color: lighten(@black, 10%);
     font-size: 83%;
   }
-  span {
+  > span {
     color: lighten(@cool-grey, 45%);
     font-size: .85em;
     padding-right: .25em;
     .transition( 0.2s; color; ease-in-out );
   }
-  &:focus span,
-  &:hover span {
+  &:focus > span,
+  &:hover > span {
     color: @cool-grey;
   }
 }
@@ -67,14 +67,14 @@ ol {
 
 ul {
   list-style: none;
-  li { padding-bottom: .5em; }
+  > li { padding-bottom: .5em; }
 }
 
 .dot-list {
   text-indent: -1em;
   padding-left: 1em;
   margin-left: 0;
-  li:before {
+  > li:before {
     content: '\2022 \020';
   }
 }
@@ -82,7 +82,7 @@ ul {
 ol {
   list-style: decimal;
   padding: 0 0 0 40px;
-  li {
+  > li {
     padding-bottom: 1em;
   }
 }
@@ -95,7 +95,7 @@ ol {
   margin: 0;
 }
 
-p code {
+p > code {
   white-space: normal !important;
 }
 

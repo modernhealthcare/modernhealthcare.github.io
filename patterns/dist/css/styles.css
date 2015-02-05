@@ -1738,30 +1738,30 @@ h6.small {
   color: #1a1a1a;
   font-size: 83%;
 }
-h1 span,
-h2 span,
-h3 span,
-h4 span,
-h5 span,
-h6 span {
+h1 > span,
+h2 > span,
+h3 > span,
+h4 > span,
+h5 > span,
+h6 > span {
   color: #b6bec6;
   font-size: .85em;
   padding-right: .25em;
   -webkit-transition: 0.2s color ease-in-out;
   transition: 0.2s color ease-in-out;
 }
-h1:focus span,
-h2:focus span,
-h3:focus span,
-h4:focus span,
-h5:focus span,
-h6:focus span,
-h1:hover span,
-h2:hover span,
-h3:hover span,
-h4:hover span,
-h5:hover span,
-h6:hover span {
+h1:focus > span,
+h2:focus > span,
+h3:focus > span,
+h4:focus > span,
+h5:focus > span,
+h6:focus > span,
+h1:hover > span,
+h2:hover > span,
+h3:hover > span,
+h4:hover > span,
+h5:hover > span,
+h6:hover > span {
   color: #424b55;
 }
 .title-xxl {
@@ -1798,7 +1798,7 @@ ol {
 ul {
   list-style: none;
 }
-ul li {
+ul > li {
   padding-bottom: .5em;
 }
 .dot-list {
@@ -1806,14 +1806,14 @@ ul li {
   padding-left: 1em;
   margin-left: 0;
 }
-.dot-list li:before {
+.dot-list > li:before {
   content: '\2022 \020';
 }
 ol {
   list-style: decimal;
   padding: 0 0 0 40px;
 }
-ol li {
+ol > li {
   padding-bottom: 1em;
 }
 .pullquote {
@@ -1823,7 +1823,7 @@ ol li {
   padding: 0 0 .5em;
   margin: 0;
 }
-p code {
+p > code {
   white-space: normal !important;
 }
 a {
@@ -1887,17 +1887,17 @@ a:active {
   padding: 0;
   margin: 0;
 }
-.nav-list li {
+.nav-list > li {
   padding: 0;
   margin: 0;
 }
-.nav-list li a {
+.nav-list > li > a {
   display: block;
   width: 100%;
   color: #7d8a9a;
   font-weight: bold;
 }
-.nav-list li a span {
+.nav-list > li > a > span {
   display: inline-block;
   width: 100%;
   background-color: #f0f1f3;
@@ -1907,8 +1907,8 @@ a:active {
   -webkit-transition: 0.2s background-color ease-in-out;
   transition: 0.2s background-color ease-in-out;
 }
-.nav-list li a:focus span,
-.nav-list li a:hover span {
+.nav-list > li > a:focus > span,
+.nav-list > li > a:hover > span {
   background-color: #d3d7dd;
 }
 .masthead {
@@ -2484,6 +2484,50 @@ hr {
   margin: 16px 0px 16px 0px;
   margin: 1rem 0rem 1rem 0rem;
 }
+.icons > li {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding: 0;
+  margin: 0px 24px 36px 0px;
+  margin: 0rem 1.5rem 2.25rem 0rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and ( min-width: 35.5em ) {
+  .icons > li {
+    width: auto;
+    min-width: 180px;
+    min-width: 11.25rem;
+  }
+}
+.icons > li > p {
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+  background-color: #f5f2f0;
+  border: 1px solid #e6e6e6;
+  padding: 6px;
+  padding: 0.375rem;
+  margin: 0 auto;
+}
+.icons > li > p:last-child {
+  border-bottom: 0 none;
+}
+.icons > li > span {
+  color: #585555;
+  height: 96px;
+  height: 6rem;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 96px;
+  line-height: 6rem;
+}
 .label {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-top: 0;
@@ -2764,7 +2808,7 @@ text-shadow: 0 -1px 0 @menu-page-nav-shadow;
     border-bottom: 1px solid black;
   }
 }
-.swatches li {
+.swatches > li {
   padding: 0px 4px 0px 4px;
   padding: 0rem 0.25rem 0rem 0.25rem;
   margin: 4px 0px 4px 0px;
@@ -2774,12 +2818,12 @@ text-shadow: 0 -1px 0 @menu-page-nav-shadow;
   box-sizing: border-box;
 }
 @media screen and ( min-width: 48em ) {
-  .swatches li {
+  .swatches > li {
     float: left;
     width: 50%;
   }
 }
-.swatches li .swatch {
+.swatches > li > .swatch {
   text-align: center;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -2788,17 +2832,17 @@ text-shadow: 0 -1px 0 @menu-page-nav-shadow;
   padding: 48px 0px 48px 0px;
   padding: 3rem 0rem 3rem 0rem;
 }
-.swatches li .swatch.dark {
+.swatches > li > .swatch.dark {
   color: #ffffff;
 }
-.swatches li .swatch.light {
+.swatches > li > .swatch.light {
   color: #000000;
 }
-.swatches li .swatch strong {
+.swatches > li > .swatch strong {
   padding-right: 8px;
   padding-right: 0.5rem;
 }
-.swatches li .logo {
+.swatches > li > .logo {
   text-align: center;
   background-repeat: no-repeat;
   background-position: center center;

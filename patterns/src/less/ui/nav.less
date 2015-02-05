@@ -9,15 +9,15 @@
 .nav-list {
   padding: 0;
   margin: 0;
-  li {
+  > li {
     padding: 0;
     margin: 0;
-    a {
+    > a {
       display: block;
       width: 100%;
       color: lighten(@cool-grey, 25%);
       font-weight: bold;
-      span {
+      > span {
         display: inline-block;
         width: 100%;
         background-color: lighten(@cool-grey, 65%);
@@ -28,7 +28,7 @@
       }
       &:focus,
       &:hover {
-        span {
+        > span {
           background-color: lighten(@cool-grey, 55%);
         }
       }
