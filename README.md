@@ -2,6 +2,6 @@
 
 > The leader in healthcare business news, research & data
 
-## [Docs](http://modernhealthcare.github.io/docs/dist)
+## [Docs](http://modernhealthcare.github.io/mh-docs/dist)
 
-## [Patterns](http://modernhealthcare.github.io/patterns/dist)
+## [Patterns](http://modernhealthcare.github.io/mh-patterns/dist)
