@@ -1,0 +1,51 @@
+<h1 class="title-xxl">Javascript Styleguide</h1>
+<em>MH's approach to writing/maintianing JS</em>
+
+
+
+<h2 id="selectors">Selectors</h2>
+<p></p>
+
+<h2 class="label -label-xl">Markup:</h2>
+<pre class="language-markup">
+<code class="language-markup">
+&lt;!-- html -->
+&lt;a class="toggle" data-js="toggle">X&lt;/a>
+</code>
+</pre>
+<h2 class="label -label-xl">Scripts:</h2>
+<pre class="language-javascript">
+<code class="language-javascript">
+// vanilla js
+var element = document.querySelector('[data-js="toggle"]');
+
+// jquery
+var element = $('[data-js="toggle"]');
+</code>
+</pre>
+
+<p>Why? To seperate concerns. More <a href="http://shoptalkshow.com/episodes/134-marc-grabanski/#t=16:07" target="_blank">here</a>.</p>
+
+
+
+<h2 id="functions">Functions</h2>
+
+
+
+<h2 id="optimization">Optimization</h2>
+
+
+
+<h2 id="jquery">jQuery</h2>
+
+
+
+<h2 id="angularjs">AngularJS</h2>
+
+
+
+<h2 id="resources">Resources</h2>
+<ul class="dot-list">
+  <li><a href="https://github.com/airbnb/javascript" target="_blank">Airbnb JavaScript Style Guide</a>
+  <li><a href="http://eloquentjavascript.net/" target="_blank">Eloquent JavaScript</a>
+</ul>
