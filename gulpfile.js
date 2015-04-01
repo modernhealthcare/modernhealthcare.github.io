@@ -68,7 +68,7 @@ gulp.task('html', function() {
     keepClosingSlash: true
   }))
   .pipe(size({ showFiles: true, title: 'html' }))
-  .pipe(gulp.dest('./dist'));
+  .pipe(gulp.dest('./'));
 });
 
 gulp.task('images', function() {
@@ -89,7 +89,7 @@ gulp.task('fonts', function() {
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
-      baseDir: './dist',
+      baseDir: './',
       index: 'index.html'
     }
   });
