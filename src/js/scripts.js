@@ -1,8 +1,7 @@
 $(document).ready(function () {
 
-  var $this = $(this);
-
   $('h1,h2,h3,h4,h5,h6').each(function() {
+    var $this = $(this);
     var link = '<span class="icon-link"></span>';
 
     if ($this.attr('id')) {
@@ -24,4 +23,5 @@ $(document).ready(function () {
   var n = d.getFullYear();
   var $copyright = $('[data-js="copyright"]');
   $copyright.html('Copyright &copy; ' + n + ' <a href="http://www.modernhealthcare.com">Modern Healthcare</a>');
+
 });
