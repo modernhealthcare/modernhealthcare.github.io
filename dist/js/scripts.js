@@ -4,6 +4,7 @@ $(document).ready(function () {
 
   $('h1,h2,h3,h4,h5,h6').each(function() {
     var link = '<span class="icon-link"></span>';
+
     if ($this.attr('id')) {
       $this.prepend(link);
     }
@@ -14,6 +15,7 @@ $(document).ready(function () {
       $('html,body').animate({
         scrollTop: 0
       }, 400);
+
       e.preventDefault();
     });
   });
