@@ -49,6 +49,11 @@
         }
       }
     }
+    &.logo.current {
+      > a:after {
+        background-color: lighten(@cool-grey, 60%);
+      }
+    }
     @media @md {
       display: block;
       &.logo {

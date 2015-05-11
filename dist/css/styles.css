@@ -1873,6 +1873,9 @@ a:active {
   height: 6px;
   background-color: #424b55;
 }
+.main-nav > li.logo.current > a:after {
+  background-color: #e1e4e8;
+}
 @media screen and ( min-width: 48em ) {
   .main-nav > li {
     display: block;
