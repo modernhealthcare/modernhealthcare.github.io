@@ -31,8 +31,17 @@ $(document).ready(function () {
   });
 
   $(function() {
+    var $top = $('[data-js="top"]');
     var $nav = $('[data-js="nav-sidebar"]');
     var $navLink = $('[data-js="sub-nav"] a');
+
+    $top.click(function(e) {
+      $doc.animate({
+        scrollTop: 0
+      }, 400);
+
+      e.preventDefault();
+    });
 
     $('a[href*="#"]:not([href="#"])').click(function(e) {
       var target = $(this.hash);
