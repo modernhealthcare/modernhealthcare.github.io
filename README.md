@@ -8,3 +8,4 @@
 - [Patterns](http://modernhealthcare.github.io/mh-patterns/dist)
 - [Logos](https://github.com/modernhealthcare/mh-logo/tree/master)
 - [Newsletters](https://github.com/modernhealthcare/mh-newsletter)
+- [Performance](http://modernhealthcare.github.io/mh-performance/dist)
